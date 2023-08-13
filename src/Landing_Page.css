@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner');
+@import url('https://fonts.googleapis.com/css2?family=Teko');
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgb(128, 128, 128);
+    font-size: large;
+    font-family: Rajdhani;
+    position: fixed;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.navbar.colorChange{
+    background-color: #f7b900af;
+    transition-duration: 0.5s;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo-footer{
+    width: 40%;
+}
+
+.footer{
+    margin-top: 50px;
+    background-color: #F1C232;
+    padding: 20px;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    column-gap: 30px;
+}
+
+.contact-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-options{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav:hover{
+    color: #F1C232;
+    cursor: pointer;
+}
+
+.navbar.colorChange .nav:hover{
+    color: white;
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.landing-page-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 15px;
+    background-color: white;
+    scroll-behavior: smooth;
+    z-index: 0;
+}
+
+.content-head{
+    font-size: xxx-large;
+    font-family: Teko;
+    font-weight: bold;
+    color: #F1C232;
+    text-shadow: 0px 1px 2px rgb(227, 227, 227);
+}
+
+.content-body{
+    font-family: Edu SA Beginner;
+    font-size: large;
+    font-weight: bold;
+}
+
+.content-pic{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+
+.rapid-pic{
+    background-image: url("./instruments-chem.jpeg") ;
+}
+
+.integrated-pic{
+    background-image: url("./oven.jpeg") ;
+}
+
+.img-shadow{
+    filter: drop-shadow(10px 15px 20px grey); 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.1; }
+    100% { opacity: 1; }
+  }
+
+
+.part{
+    animation: fadeIn 0.5s ;
+    animation-delay: inherit;
+}
+
+.unified-platform{
+    display: flex;
+    justify-self: center;
+}
+
+canvas {
+    position: relative;
+    width: 60vw;
+    height: 450px;
+    top: 150px;
+    left: 10%;
+  }
+
+
+.after-scroll-animate{
+    margin-top: 100%;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+}
+
+.post-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+    padding-top: 100px;
+}
+
+.header-space{
+    width: 100vw;
+    height: 100px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;   
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #f8c21e , #f2ce63c2);
+}
+
+@keyframes slide-in-center-to-right {
+    0% {right: 30%;}
+    100% { right : 20px}
+  }
+
+  @keyframes FadeIn-slow {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% { opacity: 1;}
+  }
+
+.intro-body{
+    height: 70vh;
+    width: 70vh;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, #f4dc8f , #f6c636e8);
+    position: absolute;
+    right: 20px;
+    animation: slide-in-center-to-right 2s ;
+}
+
+.intro-pic{
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    width: 70vh;
+    height: 70vh;
+}
+
+.intro-content{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    animation: FadeIn-slow 2s;
+}
+
+.intro-head{
+    color: white;
+    font-size: xxx-large;
+    font-family: Kanit;
+    font-weight: bold;
+}
+
+.intro-content-body{
+    font-family: Edu SA Beginner;
+    font-size: large;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items:stretch;
+}
+
+.icb{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.258);
+    border-radius: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.feature{
+    padding: 10px;
+    background-image: linear-gradient(to bottom , #ffbf00bd, rgb(250, 229, 165));
+    width: 15vw;
+    height: 17vw;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.feature:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.feature-text{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    font-size: medium;
+}
+
+.feature:hover .feature-text{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.dash{
+    width: 60%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #F1C232;
+}
+
+.subhead-text{
+    font-family: Nunito;
+    font-size: xxx-large;
+}
+
+.feature-icon{
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-icon{
+    width: 50%;
+    height: 50%;
+}
+
+.feature-explain{
+    font-family: Kanit;
+    display: none;
+}
+
+.feature:hover .feature-explain{
+    transition-duration: 0.3s;
+    display: flex;
+}
+
+.feature:hover .feature-icon {
+    display: none;
+}
+
+.feature:hover .feature-text {
+    display: none;
+}
